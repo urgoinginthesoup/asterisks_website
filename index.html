@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission Page // Links</title>
+
+    <!--custom font-->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500&family=Syne:wght@800&display=swap" rel="stylesheet">
+
+    <!--that tiny icon in the tab-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!--links .css code to my .html. ignore this -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--rain background-->
+    <video autoplay loop muted playsinline id="simple-rain-bg">
+    <source src="rain.mp4" type="video/mp4">
+    </video>
+
+    <!--fishing rod cursor code (rest in script.js)-->
+    <div id="custom-cursor">
+        <img id="cursor-img" src="cursors/fishingrodbagground.gif" alt="">
+    </div>
+
+    <header>
+        <div class="logo">ASTERISK</div>
+
+        <!--switches pages-->
+        <nav>
+            <a href="#" class="nav-link active" onclick="switchPage('home')">Links</a>
+            <a href="#" class="nav-link" onclick="switchPage('commissions')">Prices and Showcase</a>
+            <a href="#" class="nav-link" onclick="switchPage('contact')">Terms and Conditions</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--FIRST PAGE; SOCIAL MEDIA LINKS & HOME PAGE-->
+        <section id="home" class="page-section active">
+            <div class="profile-split-wrapper">
+                
+                <div class="profile-image-side">
+                    <img src="images/profilepicture.png" alt="asterfishie's pfp" class="main-profile-pic">
+                </div>
+
+                <!--can change <p> to say anything you want-->
+                <div class="profile-content-side">
+                    <div class="hero-text">
+                        <h1>Asterfishie</h1>
+                        <p>Heya, I'm Asterfishie/Asterisk. I do furry art commissions.</p>
+                    </div>
+                    
+                    <div class="social-links-list">
+
+                        <a href="https://trello.com/b/6a68d036705f9eb00cc0e653/ATTI9927f589a3c70c86b19b0d34ad9afa41DED92E92/asterfishie-queue" target="_blank" class="social-item">
+                            <span>Trello</span>
+                            <span>→</span>
+                        </a>
+
+                        <a href="https://ko-fi.com/asterfishie" target="_blank" class="social-item">
+                            <span>Ko-Fi</span>
+                            <span>→</span>
+                        </a>
+
+                        <a href="https://www.instagram.com/asterfishie" target="_blank" class="social-item">
+                            <span>Instagram</span>
+                            <span>→</span>
+                        </a>
+
+                        <a href="https://x.com/asterfishie" target="_blank" class="social-item">
+                            <span>Twitter/X</span>
+                            <span>→</span>
+                        </a>
+
+                        <a href="https://bsky.app/profile/asterfishie.bsky.social" target="_blank" class="social-item">
+                            <span>Bluesky</span>
+                            <span>→</span>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@asterfisk" target="_blank" class="social-item">
+                            <span>TikTok</span>
+                            <span>→</span>
+                        </a>
+
+                        <a href="https://www.tumblr.com/asterfishie" target="_blank" class="social-item">
+                            <span>Tumblr</span>
+                            <span>→</span>
+                        </a>
+
+                        <a href="https://toyhou.se/asterfishie" target="_blank" class="social-item">
+                            <span>Toyhouse</span>
+                            <span>→</span>
+                        </a>
+                    </div>
+
+                    <div class="status-banner">
+                        <span class="status-dot"></span> Status: Commission's Open
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--SECOND PAGE;COMMS AND PRICES-->
+        <section id="commissions" class="page-section">
+            <h2>Commission Rates & Gallery</h2>
+
+            <!--prices table-->
+            <div class="table-wrapper">
+
+             <table class="price-table">
+    <thead>
+        <tr>
+            <th>size</th>
+            <th>cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>symmetrical icon</td>
+            <td>€10</td>
+        </tr>
+        <tr>
+            <td>asymmetrical portrait / icon</td>
+            <td>€15</td>
+        </tr>
+        <tr>
+            <td>half body</td>
+            <td>€25</td>
+        </tr>
+        <tr>
+            <td>full body</td>
+            <td>€50</td>
+        </tr>
+        <tr>
+            <td>reference sheet</td>
+            <td>€70+ <span class="table-note">(+€10 fee)</span></td>
+        </tr>
+        <tr>
+            <td>custom design</td>
+            <td>€55+</td>
+        </tr>
+        <tr>
+            <td>extra character</td>
+            <td>+75%</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<!-- showcase section-->
+ <h2>Gallery of my work</h2>
+<div class="gallery-rows-container">
+    
+    <!-- handles the character sheets -->
+    <div class="showcase-row-group">
+        <h3 class="column-title">character sheets</h3>
+        <div class="row-items">
+
+            <!--copy this to add more character sheet images-->
+            <div class="showcase-item">
+                <img src="images/charactersheet.png" alt="character sheet example" class="showcase-img">
+            </div>
+
+            <!--paste it here-->
+
+        </div>
+    </div>
+    
+    <!-- handles full body stuff -->
+    <div class="showcase-row-group">
+        <h3 class="column-title">fullbody work</h3>
+        <div class="row-items">
+
+            <div class="showcase-item">
+                <img src="images/fullbodyart.png" alt="full body piece" class="showcase-img">
+            </div>  
+
+            <!--copy this to add more full body art images-->
+            <div class="showcase-item">
+                <img src="images/fullbodyart2.png" alt="full body piece" class="showcase-img">
+            </div>
+            
+            <!--paste it here-->
+
+        </div>
+    </div>
+    
+    <!-- handles half body/icons stuff -->
+    <div class="showcase-row-group">
+        <h3 class="column-title">half body / pfp art</h3>
+        <div class="row-items">
+            <div class="showcase-item">
+                <img src="images/icon_symm.png" alt="half body symmetrical" class="showcase-img">
+            </div>
+            
+            <!--copy this to add more half body images both asymmetrical and symmetrical-->
+            <div class="showcase-item">
+                <img src="images/icon_asymm.png" alt="half body asymmetrical" class="showcase-img">
+            </div>
+        </div>
+
+        <!--paste it here-->
+
+    </div>
+</div>
+
+        </section>
+                        
+        <!--THIRD PAGE; TERMS AND CONDITIONS-->
+        <section id="contact" class="page-section">
+
+    <!--banner-->
+    <div class="tc-banner-wrapper">
+        <img src="images/banner.jpg" alt="asterfishie banner" class="tc-graphic-banner">
+
+        <div class="tc-intro-block">
+            <h2>TERMS OF SERVICE</h2>
+            <p class="last-updated">LAST UPDATED: 06/08/26</p> <!--this line is where you update the last updated date on your t&c's if it happens-->
+            <p class="tc-intro-text">By purchasing a commission from me, you agree to the following terms and conditions:</p>
+            <p class="tc-disclaimer">*[Throughout this document, the terms 'i', 'me', and 'my' refer to the artist, Asterfishie]</p>
+        </div>
+    </div>
+
+    <!--boundaries-->
+    <div class="boundaries-grid"><div class="boundary-box will-box">
+            <h3><span class="status-marker check-mark">✓</span> I WILL DRAW</h3>
+            <ul class="boundary-list">
+                <li>Any furry species</li>
+                <li>Anthro or feral characters</li>
+                <li>OCs or fandom characters</li>
+                <li>Ship art</li>
+            </ul>
+        </div>
+
+         <div class="boundary-box wont-box">
+            <h3><span class="status-marker cross-mark">✗</span> I WON'T DRAW</h3>
+            <ul class="boundary-list">
+                <li>NSFW or fetish art</li>
+                <li>Extreme gore</li>
+                <li>Anything involving hateful or problematic content</li>
+                <li class="nested-note">(eg. symbols of hate, illegal relationships, etc)</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--clauses; feel free to edit any text here. If anything changes to the t&c's make sure to update the date-->
+    <div class="tc-clauses-container">
+        <div class="clause-section">
+
+            <!--payments clause-->
+            <h4>PAYMENT</h4>
+            <ol class="clause-list" start="1">
+                <li>All commissions are in euros. Payment is only accepted through Ko-Fi or PayPal.</li>
+                <li>Client agrees to pay due amount upfront, and accepts that work on the commission will not commence until payment has been received.</li>
+            </ol>
+        </div>
+
+        <!--product delivery clause-->
+         <div class="clause-section">
+            <h4>PRODUCT DELIVERY</h4>
+            <ol class="clause-list" start="3">
+                <li>Client agrees that the commission will be delivered digitally via email or dropbox.</li>
+                <li>Upon delivery of the product, it is the client's responsibility to store it properly. I can not guarantee that the original copy of the product will be available in the case that the client loses their files.</li>
+            </ol>
+        </div>
+
+        <!--revisions clause-->
+        <div class="clause-section">
+            <h4>REVISIONS</h4>
+            <ol class="clause-list" start="5">
+                <li>Client obliges to contact in a fast and responsive manner (within 24h of updates) lack of communication on behalf of the client will be treated as approval.</li>
+                <li>Client has a right to edits during every stage of the commission, but I will not edit something like the pose after the client has approved the lineart.</li>
+                <li>Client has right to a reasonable amount of minor edits after completion. Any mistakes on my behalf (eg. character colors) will be fixed for free, even after the commission is completed. other requests may require additional payment.</li>
+            </ol>
+        </div>
+        <!--refund policy-->
+        <div class="clause-section">
+            <h4>REFUND POLICY</h4>
+            <ol class="clause-list" start="8">
+                <li>I reserve the right to refuse or cancel any order, under condition of full refund.</li>
+                <li>Client will receive full refund, no questions asked, if commission is not completed within 3 times the agreed upon turn around time.</li>
+                <li>I will not provide refunds for any reasons on the client side. Do not commission me if you do not have the money to do so.</li>
+            </ol>
+        </div>
+
+        <!--usage rights clause-->
+        <div class="clause-section full-width-clause">
+            <h4>PERSONAL AND COMMERCIAL USE</h4>
+            <ol class="clause-list" start="11">
+                <li>By default, I maintain the right to post commissioned work. keeping commissions private will incur a 10% upcharge. Delaying posting commissions, eg. for gifts, does not require any upcharge, just let me know at the beginning of the commission.</li>
+                
+                <li>Commissions received by the client are for personal use only, and I retain rights to the artwork. any use of the commission for commercial purpose will require a separate agreement with the client, which may involve additional fees.
+                    <span class="nested-body-paragraph">Client cannot directly profit off of my art, eg. by selling stickers/merch with my art, using my art in branding for a company, or anything similar.</span>
+                    <span class="nested-body-paragraph">Creating stickers/merch with my art to use for yourself (the client) or give away is completely ok, of course!</span>
+                </li>
+                
+                <li>When using the commission online, crediting me as the artist may or may not be needed. Credit can be as simple as "art by asterfishie".
+                    <div class="credit-sub-rules">
+                        <span class="sub-label">credit is required:</span>
+                        <span class="sub-bullet">- posting the art by itself (eg. in a social media post)</span>
+                        <span class="sub-label mt-sub">credit is appreciated, but optional:</span>
+                        <span class="sub-bullet">- using the commission as decoration (eg. social media icon/banner)</span>
+                    </div>
+                </li>
+                <li>Client does not hold the right to use the product in any blockchain-related technology, NFTs, cryptocurrency, AI datasets or tools, and any present or future inventions in the space.</li>
+            </ol>
+        </div>
+
+    </div>
+        </section>
+
+
+    </main>
+
+    <footer> 
+        <p>&copy; Asterfishie 2026. All rights reserved.</p>
+    </footer>
+
+    <!--javascript stuff. links .js to my .html. ignore this lol.-->
+    <script src="script.js"></script>
+
+</body>
+</html>
